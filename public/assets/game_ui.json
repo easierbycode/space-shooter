@@ -1,0 +1,2632 @@
+{
+    "textures": [
+
+        {
+            "image": "game_ui.png",
+            "format": "RGBA8888",
+            "size": {
+                "w": 2048,
+                "h": 2048
+            },
+            "scale": "1",
+            "frames": [{
+                    "filename": "twitterBtn0.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 832,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "twitterBtn1.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 866,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "twitterBtn2.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 900,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "gotoTitleBtn0.gif",
+                    "frame": {
+                        "x": 114,
+                        "y": 832,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "gotoTitleBtn1.gif",
+                    "frame": {
+                        "x": 114,
+                        "y": 866,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "gotoTitleBtn2.gif",
+                    "frame": {
+                        "x": 114,
+                        "y": 900,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 114,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 114,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "smallScoreTxt.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 1008,
+                        "w": 33,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 33,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 33,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "scoreTxt.gif",
+                    "frame": {
+                        "x": 18,
+                        "y": 940,
+                        "w": 57,
+                        "h": 15
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 57,
+                        "h": 15
+                    },
+                    "sourceSize": {
+                        "w": 57,
+                        "h": 15
+                    }
+                },
+                {
+                    "filename": "hiScoreTxt.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 940,
+                        "w": 75,
+                        "h": 15
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 75,
+                        "h": 15
+                    },
+                    "sourceSize": {
+                        "w": 75,
+                        "h": 15
+                    }
+                },
+                {
+                    "filename": "timeTxt.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 957,
+                        "w": 42,
+                        "h": 15
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 15
+                    },
+                    "sourceSize": {
+                        "w": 42,
+                        "h": 15
+                    }
+                },
+                {
+                    "filename": "bigNum0.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum1.gif",
+                    "frame": {
+                        "x": 12,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum2.gif",
+                    "frame": {
+                        "x": 24,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum3.gif",
+                    "frame": {
+                        "x": 36,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum4.gif",
+                    "frame": {
+                        "x": 48,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum5.gif",
+                    "frame": {
+                        "x": 60,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum6.gif",
+                    "frame": {
+                        "x": 72,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum7.gif",
+                    "frame": {
+                        "x": 84,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum8.gif",
+                    "frame": {
+                        "x": 96,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "bigNum9.gif",
+                    "frame": {
+                        "x": 108,
+                        "y": 974,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 12,
+                        "h": 19
+                    },
+                    "sourceSize": {
+                        "w": 12,
+                        "h": 19
+                    }
+                },
+                {
+                    "filename": "smallNum0.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum1.gif",
+                    "frame": {
+                        "x": 8,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum2.gif",
+                    "frame": {
+                        "x": 16,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum3.gif",
+                    "frame": {
+                        "x": 24,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum4.gif",
+                    "frame": {
+                        "x": 32,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum5.gif",
+                    "frame": {
+                        "x": 40,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum6.gif",
+                    "frame": {
+                        "x": 48,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum7.gif",
+                    "frame": {
+                        "x": 56,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum8.gif",
+                    "frame": {
+                        "x": 64,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNum9.gif",
+                    "frame": {
+                        "x": 72,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "smallNumKakeru.gif",
+                    "frame": {
+                        "x": 80,
+                        "y": 995,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "logo.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 88
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 88
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 88
+                    }
+                },
+                {
+                    "filename": "subTitle.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 88,
+                        "w": 256,
+                        "h": 28
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 28
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 28
+                    }
+                },
+                {
+                    "filename": "subTitleEn.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 116,
+                        "w": 256,
+                        "h": 28
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 28
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 28
+                    }
+                },
+                {
+                    "filename": "titleStartText.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 144,
+                        "w": 256,
+                        "h": 16
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 16
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 16
+                    }
+                },
+                {
+                    "filename": "titleCopyright.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 160,
+                        "w": 256,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "titleBg.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 194,
+                        "w": 256,
+                        "h": 480
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 480
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 480
+                    }
+                },
+                {
+                    "filename": "titleG.gif",
+                    "frame": {
+                        "x": 1580,
+                        "y": 340,
+                        "w": 256,
+                        "h": 364
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 364
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 364
+                    }
+                },
+                {
+                    "filename": "staffrollG0.gif",
+                    "frame": {
+                        "x": 806,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG1.gif",
+                    "frame": {
+                        "x": 854,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG2.gif",
+                    "frame": {
+                        "x": 902,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG3.gif",
+                    "frame": {
+                        "x": 950,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG4.gif",
+                    "frame": {
+                        "x": 998,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG5.gif",
+                    "frame": {
+                        "x": 1046,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG6.gif",
+                    "frame": {
+                        "x": 1094,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollG7.gif",
+                    "frame": {
+                        "x": 1142,
+                        "y": 970,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 48,
+                        "h": 65
+                    },
+                    "sourceSize": {
+                        "w": 48,
+                        "h": 65
+                    }
+                },
+                {
+                    "filename": "staffrollName.gif",
+                    "frame": {
+                        "x": 806,
+                        "y": 1035,
+                        "w": 227,
+                        "h": 293
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 227,
+                        "h": 293
+                    },
+                    "sourceSize": {
+                        "w": 227,
+                        "h": 293
+                    }
+                },
+                {
+                    "filename": "howtoBtn0.gif",
+                    "frame": {
+                        "x": 1094,
+                        "y": 1070,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 63,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "howtoBtn1.gif",
+                    "frame": {
+                        "x": 1094,
+                        "y": 1087,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 63,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "howtoBtn2.gif",
+                    "frame": {
+                        "x": 1094,
+                        "y": 1104,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 63,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 63,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "staffrollBtn0.gif",
+                    "frame": {
+                        "x": 1033,
+                        "y": 1070,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 61,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "staffrollBtn1.gif",
+                    "frame": {
+                        "x": 1033,
+                        "y": 1087,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 61,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "staffrollBtn2.gif",
+                    "frame": {
+                        "x": 1033,
+                        "y": 1104,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 61,
+                        "h": 17
+                    },
+                    "sourceSize": {
+                        "w": 61,
+                        "h": 17
+                    }
+                },
+                {
+                    "filename": "staffrollCloseBtn.gif",
+                    "frame": {
+                        "x": 1033,
+                        "y": 1035,
+                        "w": 25,
+                        "h": 25
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 25,
+                        "h": 25
+                    },
+                    "sourceSize": {
+                        "w": 25,
+                        "h": 25
+                    }
+                },
+                {
+                    "filename": "staffrollTwitterBtn.gif",
+                    "frame": {
+                        "x": 1058,
+                        "y": 1035,
+                        "w": 46,
+                        "h": 25
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 46,
+                        "h": 25
+                    },
+                    "sourceSize": {
+                        "w": 46,
+                        "h": 25
+                    }
+                },
+                {
+                    "filename": "staffrollLinkBtn.gif",
+                    "frame": {
+                        "x": 1104,
+                        "y": 1035,
+                        "w": 46,
+                        "h": 25
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 46,
+                        "h": 25
+                    },
+                    "sourceSize": {
+                        "w": 46,
+                        "h": 25
+                    }
+                },
+                {
+                    "filename": "advBg0.gif",
+                    "frame": {
+                        "x": 806,
+                        "y": 520,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 220
+                    }
+                },
+                {
+                    "filename": "advBg1.gif",
+                    "frame": {
+                        "x": 1062,
+                        "y": 520,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 220
+                    }
+                },
+                {
+                    "filename": "advBg2.gif",
+                    "frame": {
+                        "x": 1318,
+                        "y": 520,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 220
+                    }
+                },
+                {
+                    "filename": "advBg3.gif",
+                    "frame": {
+                        "x": 806,
+                        "y": 740,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 220
+                    }
+                },
+                {
+                    "filename": "advBgDone.gif",
+                    "frame": {
+                        "x": 1062,
+                        "y": 740,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 220
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 220
+                    }
+                },
+                {
+                    "filename": "hudCabtn0per.gif",
+                    "frame": {
+                        "x": 1323,
+                        "y": 745,
+                        "w": 67,
+                        "h": 67
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 67,
+                        "h": 67
+                    },
+                    "sourceSize": {
+                        "w": 67,
+                        "h": 67
+                    }
+                },
+                {
+                    "filename": "hudCabtn100per.gif",
+                    "frame": {
+                        "x": 1390,
+                        "y": 745,
+                        "w": 67,
+                        "h": 67
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 67,
+                        "h": 67
+                    },
+                    "sourceSize": {
+                        "w": 67,
+                        "h": 67
+                    }
+                },
+                {
+                    "filename": "hudCabtnBg0.gif",
+                    "frame": {
+                        "x": 1323,
+                        "y": 812,
+                        "w": 102,
+                        "h": 102
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 102,
+                        "h": 102
+                    },
+                    "sourceSize": {
+                        "w": 102,
+                        "h": 102
+                    }
+                },
+                {
+                    "filename": "hudCabtnBg1.gif",
+                    "frame": {
+                        "x": 1425,
+                        "y": 812,
+                        "w": 102,
+                        "h": 102
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 102,
+                        "h": 102
+                    },
+                    "sourceSize": {
+                        "w": 102,
+                        "h": 102
+                    }
+                },
+                {
+                    "filename": "hudBg0.gif",
+                    "frame": {
+                        "x": 1574,
+                        "y": 0,
+                        "w": 256,
+                        "h": 45
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 45
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 45
+                    }
+                },
+                {
+                    "filename": "hudBg1.gif",
+                    "frame": {
+                        "x": 1574,
+                        "y": 45,
+                        "w": 256,
+                        "h": 45
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 45
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 45
+                    }
+                },
+                {
+                    "filename": "hpBar.gif",
+                    "frame": {
+                        "x": 1574,
+                        "y": 90,
+                        "w": 200,
+                        "h": 11
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 200,
+                        "h": 11
+                    },
+                    "sourceSize": {
+                        "w": 200,
+                        "h": 11
+                    }
+                },
+                {
+                    "filename": "comboBar.gif",
+                    "frame": {
+                        "x": 1574,
+                        "y": 101,
+                        "w": 100,
+                        "h": 5
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 5
+                    },
+                    "sourceSize": {
+                        "w": 100,
+                        "h": 5
+                    }
+                },
+                {
+                    "filename": "comboNum0.gif",
+                    "frame": {
+                        "x": 1574,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum1.gif",
+                    "frame": {
+                        "x": 1584,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum2.gif",
+                    "frame": {
+                        "x": 1594,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum3.gif",
+                    "frame": {
+                        "x": 1604,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum4.gif",
+                    "frame": {
+                        "x": 1614,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum5.gif",
+                    "frame": {
+                        "x": 1624,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum6.gif",
+                    "frame": {
+                        "x": 1634,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum7.gif",
+                    "frame": {
+                        "x": 1644,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum8.gif",
+                    "frame": {
+                        "x": 1654,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "comboNum9.gif",
+                    "frame": {
+                        "x": 1664,
+                        "y": 106,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 10,
+                        "h": 13
+                    },
+                    "sourceSize": {
+                        "w": 10,
+                        "h": 13
+                    }
+                },
+                {
+                    "filename": "stageTitle.gif",
+                    "frame": {
+                        "x": 594,
+                        "y": 0,
+                        "w": 174,
+                        "h": 44
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 176,
+                        "h": 44
+                    },
+                    "sourceSize": {
+                        "w": 176,
+                        "h": 44
+                    }
+                },
+                {
+                    "filename": "stageNum1.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 512,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "stageNum2.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 576,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "stageNum3.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 640,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "stageNum4.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 704,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "stageFight.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 768,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 64
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 64
+                    }
+                },
+                {
+                    "filename": "stageclear.gif",
+                    "frame": {
+                        "x": 594,
+                        "y": 88,
+                        "w": 212,
+                        "h": 88
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 214,
+                        "h": 88
+                    },
+                    "sourceSize": {
+                        "w": 214,
+                        "h": 88
+                    }
+                },
+                {
+                    "filename": "stageTimeover.gif",
+                    "frame": {
+                        "x": 594,
+                        "y": 176,
+                        "w": 212,
+                        "h": 88
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 214,
+                        "h": 88
+                    },
+                    "sourceSize": {
+                        "w": 214,
+                        "h": 88
+                    }
+                },
+                {
+                    "filename": "knockoutK.gif",
+                    "frame": {
+                        "x": 592,
+                        "y": 352,
+                        "w": 82,
+                        "h": 100
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 82,
+                        "h": 100
+                    },
+                    "sourceSize": {
+                        "w": 82,
+                        "h": 100
+                    }
+                },
+                {
+                    "filename": "knockoutO.gif",
+                    "frame": {
+                        "x": 674,
+                        "y": 352,
+                        "w": 82,
+                        "h": 100
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 82,
+                        "h": 100
+                    },
+                    "sourceSize": {
+                        "w": 82,
+                        "h": 100
+                    }
+                },
+                {
+                    "filename": "akebonoBg0.gif",
+                    "frame": {
+                        "x": 806,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 512
+                    }
+                },
+                {
+                    "filename": "akebonoBg1.gif",
+                    "frame": {
+                        "x": 1062,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 512
+                    }
+                },
+                {
+                    "filename": "akebonoBg2.gif",
+                    "frame": {
+                        "x": 1318,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 512
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 512
+                    }
+                },
+                {
+                    "filename": "akebonoTen.gif",
+                    "frame": {
+                        "x": 1577,
+                        "y": 141,
+                        "w": 214,
+                        "h": 183
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 214,
+                        "h": 183
+                    },
+                    "sourceSize": {
+                        "w": 214,
+                        "h": 183
+                    }
+                },
+                {
+                    "filename": "continueTitle.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 576,
+                        "w": 256,
+                        "h": 34
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 34
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 34
+                    }
+                },
+                {
+                    "filename": "continueNewrecord.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 610,
+                        "w": 256,
+                        "h": 14
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 14
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 14
+                    }
+                },
+                {
+                    "filename": "countdownBg.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown0.gif",
+                    "frame": {
+                        "x": 368,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown1.gif",
+                    "frame": {
+                        "x": 480,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown2.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 144,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown3.gif",
+                    "frame": {
+                        "x": 368,
+                        "y": 144,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown4.gif",
+                    "frame": {
+                        "x": 480,
+                        "y": 144,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown5.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 288,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown6.gif",
+                    "frame": {
+                        "x": 368,
+                        "y": 288,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown7.gif",
+                    "frame": {
+                        "x": 480,
+                        "y": 288,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown8.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 432,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "countdown9.gif",
+                    "frame": {
+                        "x": 368,
+                        "y": 432,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 112,
+                        "h": 144
+                    },
+                    "sourceSize": {
+                        "w": 112,
+                        "h": 144
+                    }
+                },
+                {
+                    "filename": "continueFace0.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 624,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "sourceSize": {
+                        "w": 100,
+                        "h": 131
+                    }
+                },
+                {
+                    "filename": "continueFace1.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 757,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "sourceSize": {
+                        "w": 100,
+                        "h": 131
+                    }
+                },
+                {
+                    "filename": "continueFace2.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 890,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "sourceSize": {
+                        "w": 100,
+                        "h": 131
+                    }
+                },
+                {
+                    "filename": "continueFace3.gif",
+                    "frame": {
+                        "x": 360,
+                        "y": 890,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 131
+                    },
+                    "sourceSize": {
+                        "w": 100,
+                        "h": 131
+                    }
+                },
+                {
+                    "filename": "continueYes.gif",
+                    "frame": {
+                        "x": 356,
+                        "y": 624,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueYesOver.gif",
+                    "frame": {
+                        "x": 356,
+                        "y": 650,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueYesDown.gif",
+                    "frame": {
+                        "x": 356,
+                        "y": 676,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueNo.gif",
+                    "frame": {
+                        "x": 412,
+                        "y": 624,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueNoOver.gif",
+                    "frame": {
+                        "x": 412,
+                        "y": 650,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueNoDown.gif",
+                    "frame": {
+                        "x": 412,
+                        "y": 676,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 56,
+                        "h": 26
+                    },
+                    "sourceSize": {
+                        "w": 56,
+                        "h": 26
+                    }
+                },
+                {
+                    "filename": "continueGameOver.gif",
+                    "frame": {
+                        "x": 356,
+                        "y": 702,
+                        "w": 142,
+                        "h": 84
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 142,
+                        "h": 84
+                    },
+                    "sourceSize": {
+                        "w": 142,
+                        "h": 84
+                    }
+                },
+                {
+                    "filename": "congraBg0.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 1030,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 422
+                    }
+                },
+                {
+                    "filename": "congraBg1.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 1030,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 422
+                    }
+                },
+                {
+                    "filename": "congraBg2.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 1030,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 422
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 422
+                    }
+                },
+                {
+                    "filename": "congraTxt0.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 1470,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 50
+                    }
+                },
+                {
+                    "filename": "congraTxt1.gif",
+                    "frame": {
+                        "x": 256,
+                        "y": 1470,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 50
+                    }
+                },
+                {
+                    "filename": "congraTxt2.gif",
+                    "frame": {
+                        "x": 512,
+                        "y": 1470,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 50
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 50
+                    }
+                },
+                {
+                    "filename": "congraInfoBg.gif",
+                    "frame": {
+                        "x": 0,
+                        "y": 210,
+                        "w": 256,
+                        "h": 160
+                    },
+                    "rotated": false,
+                    "trimmed": true,
+                    "spriteSourceSize": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 256,
+                        "h": 160
+                    },
+                    "sourceSize": {
+                        "w": 256,
+                        "h": 160
+                    }
+                }
+            ],
+            "meta": {
+                "app": "",
+                "version": "1.0",
+                "image": "img/game_ui.png?t=201903150000",
+                "format": "RGBA8888",
+                "size": {
+                    "w": 2048,
+                    "h": 2048
+                },
+                "scale": "1",
+                "smartupdate": "$TexturePacker:SmartUpdate:2f213a6b451f9f5719773418dfe80ae8$"
+            }
+        }
+
+    ]
+}
