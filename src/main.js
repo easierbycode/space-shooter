@@ -1,6 +1,7 @@
 
 import AdvScene from "./AdvScene"
 import constants from "./constants"
+import GameScene from "./GameScene"
 import LoadScene from "./LoadScene"
 import TitleScene from "./TitleScene"
 
@@ -27,7 +28,8 @@ const config = {
     scene: [
         LoadScene,
         TitleScene,
-        AdvScene
+        AdvScene,
+        GameScene
     ]
 }
 
