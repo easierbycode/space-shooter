@@ -421,7 +421,7 @@ export default class TitleScene extends Scene {
                 sound: "voice_titlecall"
             },
             {
-                at: 2480,
+                from: 0,
                 tween: {
                     targets: this.#startBtn,
                     alpha: 1,
@@ -429,7 +429,7 @@ export default class TitleScene extends Scene {
                 }
             },
             {
-                at: 2580 + 300,
+                from: 300,
                 run: function () {
                     this.#startBtn.onFlash.bind(this.#startBtn)();
                 },
