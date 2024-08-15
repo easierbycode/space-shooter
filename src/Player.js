@@ -1,6 +1,7 @@
 
 import { AnimatedSprite } from "./LoadScene"
 import { Container, Sprite } from "./TitleScene"
+import AudioManager from "./audio"
 import constants from "./constants"
 import properties from "./properties";
 
@@ -331,9 +332,9 @@ export default class Player extends CharacterUnit {
                     (o.id = this.bulletIdCnt++),
                     (o.shadowReverse = !1),
                     (o.shadowOffsetY = 0),
-                    o.on(y.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
+                    o.on(CharacterUnit.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
                     o.on(
-                        y.CUSTOM_EVENT_DEAD_COMPLETE,
+                        CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE,
                         this.bulletRemoveComplete.bind(this, o)
                     ),
                     this.addChild(o),
@@ -350,9 +351,9 @@ export default class Player extends CharacterUnit {
                     (o.id = this.bulletIdCnt++),
                     (o.shadowReverse = !1),
                     (o.shadowOffsetY = 0),
-                    o.on(y.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
+                    o.on(CharacterUnit.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
                     o.on(
-                        y.CUSTOM_EVENT_DEAD_COMPLETE,
+                        CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE,
                         this.bulletRemoveComplete.bind(this, o)
                     ),
                     this.addChild(o),
@@ -384,9 +385,9 @@ export default class Player extends CharacterUnit {
                         (o.id = this.bulletIdCnt++),
                         (o.shadowReverse = !1),
                         (o.shadowOffsetY = 0),
-                        o.on(y.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
+                        o.on(CharacterUnit.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, o)),
                         o.on(
-                            y.CUSTOM_EVENT_DEAD_COMPLETE,
+                            CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE,
                             this.bulletRemoveComplete.bind(this, o)
                         ),
                         this.addChild(o),
@@ -402,9 +403,9 @@ export default class Player extends CharacterUnit {
     }
 
     bulletRemoveComplete(t) {
-        t.off(y.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, t)),
+        t.off(CharacterUnit.CUSTOM_EVENT_DEAD, this.bulletRemove.bind(this, t)),
             t.off(
-                y.CUSTOM_EVENT_DEAD_COMPLETE,
+                CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE,
                 this.bulletRemoveComplete.bind(this, t)
             ),
             t.explosion.destroy();
@@ -659,7 +660,7 @@ export default class Player extends CharacterUnit {
 
     barrierHitEffect() {
         if (this.gamepadVibration) {
-            let weakMagnitude = this.unit.x / i.GAME_WIDTH;
+            let weakMagnitude = this.unit.x / constants.GAME_WIDTH;
             let strongMagnitude = 1 - weakMagnitude;
 
             this.gamepadVibration.playEffect("dual-rumble", {
@@ -683,7 +684,7 @@ export default class Player extends CharacterUnit {
     onDamage(t) {
         if (this.barrierFlg);
         else if (!0 !== this.damageAnimationFlg) {
-            let weakMagnitude = this.unit.x / i.GAME_WIDTH;
+            let weakMagnitude = this.unit.x / constants.GAME_WIDTH;
             let strongMagnitude = 1 - weakMagnitude;
             if (
                 ((this.hp -= t),
@@ -701,7 +702,7 @@ export default class Player extends CharacterUnit {
 
                     this.dead();
                 } else {
-                    navigator.vibrate(777), this.dead();
+                    navigator.vibrate?.(777), this.dead();
                 }
             else {
                 if (this.gamepadVibration) {
@@ -712,63 +713,169 @@ export default class Player extends CharacterUnit {
                         strongMagnitude,
                     });
                 } else {
-                    navigator.vibrate(150);
+                    navigator.vibrate?.(150);
                 }
 
-                var e = new TimelineMax({
-                    onComplete: function () {
+                var tl = this.scene.add.timeline([
+                    {
+                        at: 0,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0,
+                            tint: 16711680
+                        }
+                    },
+                    {
+                        at: 0,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0,
+                            y: this.unit.y + 2,
+                            alpha: 0.2
+                        }
+                    },
+                    {
+                        at: 0.15 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0,
+                            tint: Phaser.Display.Color.IntegerToColor(16777215)
+                        }
+                    },
+                    {
+                        at: 0.15 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0,
+                            y: this.unit.y - 2,
+                            alpha: 1
+                        }
+                    },
+                    {
+                        at: 0.3 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0.05,
+                            tint: 16711680
+                        }
+                    },
+                    {
+                        at: 0.3 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0.05,
+                            y: this.unit.y + 2,
+                            alpha: 0.2
+                        }
+                    },
+                    {
+                        at: 0.5 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0,
+                            tint: Phaser.Display.Color.IntegerToColor(16777215)
+                        }
+                    },
+                    {
+                        at: 0.5 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0,
+                            y: this.unit.y - 2,
+                            alpha: 1
+                        }
+                    },
+                    {
+                        at: 0.65 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0.05,
+                            tint: 16711680
+                        }
+                    },
+                    {
+                        at: 0.65 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0.05,
+                            y: this.unit.y + 2,
+                            alpha: 0.2
+                        }
+                    },
+                    {
+                        at: 0.85 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0,
+                            tint: Phaser.Display.Color.IntegerToColor(16777215)
+                        }
+                    },
+                    {
+                        at: 0.85 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0,
+                            y: this.unit.y + 0,
+                            alpha: 1
+                        }
+                    },
+                    {
+                        at: 1 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0.05,
+                            tint: 16711680
+                        }
+                    },
+                    {
+                        at: 1 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0.05,
+                            y: this.unit.y + 2,
+                            alpha: 0.2
+                        }
+                    },
+                    {
+                        at: 1.20 * 1000,
+                        tween: {
+                            targets: this,
+                            duration: 0.15,
+                            delay: 0,
+                            tint: Phaser.Display.Color.IntegerToColor(16777215)
+                        }
+                    },
+                    {
+                        at: 1.20 * 1000,
+                        tween: {
+                            targets: this.unit,
+                            duration: 0.15,
+                            delay: 0,
+                            y: this.unit.y + 0,
+                            alpha: 1
+                        }
+                    }
+                ])
+                    .on("complete", () => {
                         this.damageAnimationFlg = !1;
-                    }.bind(this),
-                });
-                e.to(this.unit, 0.15, {
-                    delay: 0,
-                    y: this.unit.y + 2,
-                    tint: 16711680,
-                    alpha: 0.2,
-                }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0,
-                        y: this.unit.y - 2,
-                        tint: 16777215,
-                        alpha: 1,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0.05,
-                        y: this.unit.y + 2,
-                        tint: 16711680,
-                        alpha: 0.2,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0,
-                        y: this.unit.y - 2,
-                        tint: 16777215,
-                        alpha: 1,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0.05,
-                        y: this.unit.y + 2,
-                        tint: 16711680,
-                        alpha: 0.2,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0,
-                        y: this.unit.y + 0,
-                        tint: 16777215,
-                        alpha: 1,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0.05,
-                        y: this.unit.y + 2,
-                        tint: 16711680,
-                        alpha: 0.2,
-                    }),
-                    e.to(this.unit, 0.15, {
-                        delay: 0,
-                        y: this.unit.y + 0,
-                        tint: 16777215,
-                        alpha: 1,
-                    }),
-                    AudioManager.play("g_damage_voice"),
+                    })
+                    .play();
+
+                AudioManager.play("g_damage_voice"),
                     AudioManager.play("se_damage");
             }
             this.damageAnimationFlg = !0;
@@ -776,7 +883,7 @@ export default class Player extends CharacterUnit {
     }
 
     dead() {
-        this.emit(y.CUSTOM_EVENT_DEAD),
+        this.emit(CharacterUnit.CUSTOM_EVENT_DEAD),
             this.shootStop(),
             this.explosion.on(
                 "animationcomplete",
@@ -804,7 +911,7 @@ export default class Player extends CharacterUnit {
     }
 
     explosionComplete() {
-        this.emit(y.CUSTOM_EVENT_DEAD_COMPLETE),
+        this.emit(CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE),
             this.removeChild(this.explosion);
     }
 
