@@ -442,7 +442,7 @@ export default class Player extends CharacterUnit {
     }
 
     setUp(t, o, i) {
-        let controllerIds = Object.keys(window.controllers);
+        let controllerIds = window.controllers ? Object.keys(window.controllers) : [];
         if (controllerIds.length) {
             this.gamepad = window.controllers[controllerIds[0]];
             this.gamepadVibration = this.gamepad?.vibrationActuator;
