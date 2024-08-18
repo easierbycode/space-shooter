@@ -51,11 +51,19 @@ export default class GameScene extends Scene {
             (this.player.unitX = constants.GAME_WIDTH / 2),
             (this.player.unitY = this.player.unit.y),
             this.addChildAt(this.player, 2);
+
+            (this.enemyHitTestList = []);
     }
 
     update() {
         if (!this.theWorldFlg) {
             this.player.update(); 
+
+            for (var t = 0; t < this.enemyHitTestList.length; t++) {
+                var o = this.enemyHitTestList[t];
+        
+                o.update(this.stageBgAmountMove);
+            }
         }
     }
 }
