@@ -326,6 +326,13 @@ export default class Player extends CharacterUnit {
       case Player.SHOOT_NAME_NORMAL:
         ((o = new Bullet(this.shootNormalData)).unit.rotation =
           (270 * Math.PI) / 180),
+          ((o.unit.hitArea = new Phaser.GameObjects.Rectangle(
+            window.gameScene,
+            0,
+            ((o.unit.body.width + o.unit.input.hitArea.displayOriginY) * -1),
+            o.unit.body.height,
+            o.unit.body.width
+          ))),
           (o.unit.x = this.unit.x + 5 * Math.sin(o.unit.rotation) + 14),
           (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11),
           (o.name = Player.SHOOT_NAME_NORMAL),
