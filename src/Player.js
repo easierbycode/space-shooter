@@ -1035,7 +1035,7 @@ class Bullet extends CharacterUnit {
   }
 
   dead(t) {
-    this.emit(y.CUSTOM_EVENT_DEAD),
+    this.emit(CharacterUnit.CUSTOM_EVENT_DEAD),
       this.unit.removeChild(this.character),
       this.unit.removeChild(this.shadow),
       this.removeChild(this.unit),
