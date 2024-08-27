@@ -419,8 +419,7 @@ export default class Player extends CharacterUnit {
         this.bulletRemoveComplete.bind(this, t)
       ),
       t.explosion.destroy();
-    this.removeChild(t);
-    this.scene.sys.displayList.remove(t); // DRJ
+    t.dead();
   }
 
   shootModeChange(t) {
