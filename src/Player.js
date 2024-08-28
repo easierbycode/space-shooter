@@ -681,7 +681,7 @@ export default class Player extends CharacterUnit {
         strongMagnitude,
       });
     } else {
-      navigator.vibrate(30);
+      navigator.vibrate?.(30);
     }
     (this.barrier.tint = 16711680),
       TweenMax.to(this.barrier, 0.2, {
