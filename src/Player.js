@@ -21,9 +21,9 @@ class EventedContainer extends Container {
     this.castRemoved(t);
   }
 
-  castAdded() {}
+  castAdded() { }
 
-  castRemoved() {}
+  castRemoved() { }
 }
 
 class CharacterUnit extends EventedContainer {
@@ -33,36 +33,36 @@ class CharacterUnit extends EventedContainer {
     var i = this;
     if (
       ((i.shadowReverse = !0),
-      (i.speed = 0),
-      (i.hp = 1),
-      (i.deadFlg = !1),
-      (i.character = new AnimatedSprite(
-        window.gameScene,
-        frameKeys,
-        "game_asset"
-      )),
-      (i.character.animationSpeed = 0.1),
-      (i.unit = new Container(window.gameScene)),
-      (i.unit.exclusive = true),
-      (i.unit.interactive = !0),
-      (i.unit.name = "unit"),
-      (i.unit.hitArea = new Phaser.GameObjects.Rectangle(
-        window.gameScene,
-        0,
-        0,
-        i.character.width,
-        i.character.height
-      )),
-      (i.shadowOffsetY = 0),
-      (i.shadow = new AnimatedSprite(
-        window.gameScene,
-        frameKeys,
-        "game_asset"
-      )),
-      (i.shadow.animationSpeed = 0.1),
-      (i.shadow.tint = 0),
-      (i.shadow.alpha = 0.5),
-      void 0 !== explosionTextures)
+        (i.speed = 0),
+        (i.hp = 1),
+        (i.deadFlg = !1),
+        (i.character = new AnimatedSprite(
+          window.gameScene,
+          frameKeys,
+          "game_asset"
+        )),
+        (i.character.animationSpeed = 0.1),
+        (i.unit = new Container(window.gameScene)),
+        (i.unit.exclusive = true),
+        (i.unit.interactive = !0),
+        (i.unit.name = "unit"),
+        (i.unit.hitArea = new Phaser.GameObjects.Rectangle(
+          window.gameScene,
+          0,
+          0,
+          i.character.width,
+          i.character.height
+        )),
+        (i.shadowOffsetY = 0),
+        (i.shadow = new AnimatedSprite(
+          window.gameScene,
+          frameKeys,
+          "game_asset"
+        )),
+        (i.shadow.animationSpeed = 0.1),
+        (i.shadow.tint = 0),
+        (i.shadow.alpha = 0.5),
+        void 0 !== explosionTextures)
     ) {
       i.explosion = new AnimatedSprite(
         window.gameScene,
@@ -92,27 +92,12 @@ class CharacterUnit extends EventedContainer {
   static CUSTOM_EVENT_TAMA_ADD = "customEventtamaadd";
 
   castAdded(t) {
-    this.scene.time.addEvent({
-      callback: () => {
-        if (!this.character.active) return; // DRJ
-        this.character.play(),
-          this.shadow.play(),
-          "true" == properties.hitAreaFlg &&
-            ((this.hitbox = new Phaser.GameObjects.Graphics()),
-            this.hitbox.lineStyle(1, 16773120),
-            this.hitbox.drawRect(
-              this.unit.hitArea.x,
-              this.unit.hitArea.y,
-              this.unit.hitArea.width,
-              this.unit.hitArea.height
-            ),
-            this.unit.addChild(this.hitbox)),
-          this.shadowReverse
-            ? ((this.shadow.scaleY = -1),
-              (this.shadow.y = 2 * this.shadow.height - this.shadowOffsetY))
-            : (this.shadow.y = this.shadow.height - this.shadowOffsetY);
-      },
-    });
+    this.character.play(),
+      this.shadow.play(),
+      this.shadowReverse
+        ? ((this.shadow.scaleY = -1),
+          (this.shadow.y = 2 * this.shadow.height - this.shadowOffsetY))
+        : (this.shadow.y = this.shadow.height - this.shadowOffsetY);
   }
 
   castRemoved(t) {
@@ -269,9 +254,9 @@ export default class Player extends CharacterUnit {
   onScreenDragMove(pointer, localX, localY, event) {
     this.screenDragFlg &&
       ((this.unitX = localX),
-      this.unitX <= this.unit.hitArea.width / 2 &&
+        this.unitX <= this.unit.hitArea.width / 2 &&
         (this.unitX = this.unit.hitArea.width / 2),
-      this.unitX >= constants.GAME_WIDTH - this.unit.hitArea.width / 2 &&
+        this.unitX >= constants.GAME_WIDTH - this.unit.hitArea.width / 2 &&
         (this.unitX = constants.GAME_WIDTH - this.unit.hitArea.width / 2));
   }
 
@@ -299,7 +284,7 @@ export default class Player extends CharacterUnit {
       this.unitX <= this.unit.hitArea.width / 2 &&
         (this.unitX = this.unit.hitArea.width / 2),
         this.unitX >= constants.GAME_WIDTH - this.unit.hitArea.width / 2 &&
-          (this.unitX = constants.GAME_WIDTH - this.unit.hitArea.width / 2);
+        (this.unitX = constants.GAME_WIDTH - this.unit.hitArea.width / 2);
     }
     (this.unit.x += 0.09 * (this.unitX - (this.unit.x + this.unit.width / 2))),
       (this.unit.y += 0.09 * (this.unitY - this.unit.y)),
@@ -308,8 +293,8 @@ export default class Player extends CharacterUnit {
       (this.barrier.y = this.unit.y - 15),
       this.bulletFrameCnt++,
       this.shootOn &&
-        this.bulletFrameCnt % (this.shootInterval - this.shootSpeed) == 0 &&
-        this.shoot();
+      this.bulletFrameCnt % (this.shootInterval - this.shootSpeed) == 0 &&
+      this.shoot();
     for (var t = 0; t < this.bulletList.length; t++) {
       var e = this.bulletList[t];
       (e.unit.x += 3.5 * Math.cos(e.unit.rotation)),
@@ -317,7 +302,7 @@ export default class Player extends CharacterUnit {
         (e.unit.y <= 40 ||
           e.unit.x <= -e.unit.width ||
           e.unit.x >= constants.GAME_WIDTH) &&
-          (this.bulletRemove(e), this.bulletRemoveComplete(e));
+        (this.bulletRemove(e), this.bulletRemoveComplete(e));
     }
   }
 
@@ -382,13 +367,13 @@ export default class Player extends CharacterUnit {
               (o.unit.x = this.unit.x + 5 * Math.cos(o.unit.rotation) + 14),
               (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11))
             : 1 == t
-            ? ((o.unit.rotation = (270 * Math.PI) / 180),
-              (o.unit.x = this.unit.x + 5 * Math.cos(o.unit.rotation) + 10),
-              (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11))
-            : 2 == t &&
+              ? ((o.unit.rotation = (270 * Math.PI) / 180),
+                (o.unit.x = this.unit.x + 5 * Math.cos(o.unit.rotation) + 10),
+                (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11))
+              : 2 == t &&
               ((o.unit.rotation = (260 * Math.PI) / 180),
-              (o.unit.x = this.unit.x + 5 * Math.cos(o.unit.rotation) + 6),
-              (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11)),
+                (o.unit.x = this.unit.x + 5 * Math.cos(o.unit.rotation) + 6),
+                (o.unit.y = this.unit.y + 5 * Math.sin(o.unit.rotation) + 11)),
             (o.id = this.bulletIdCnt++),
             (o.shadowReverse = !1),
             (o.shadowOffsetY = 0),
@@ -460,7 +445,7 @@ export default class Player extends CharacterUnit {
     }
 
     switch (
-      ((this.hp = t),
+    ((this.hp = t),
       (this._percent = this.hp / this.maxHp),
       (this.shootMode = o),
       this.shootMode)
@@ -690,7 +675,7 @@ export default class Player extends CharacterUnit {
       AudioManager.play("se_guard");
   }
 
-  caFire() {}
+  caFire() { }
 
   onDamage(t) {
     if (this.barrierFlg);
@@ -699,9 +684,9 @@ export default class Player extends CharacterUnit {
       let strongMagnitude = 1 - weakMagnitude;
       if (
         ((this.hp -= t),
-        this.hp <= 0 && (this.hp = 0),
-        (this._percent = this.hp / this.maxHp),
-        this.hp <= 0)
+          this.hp <= 0 && (this.hp = 0),
+          (this._percent = this.hp / this.maxHp),
+          this.hp <= 0)
       )
         if (this.gamepadVibration) {
           this.gamepadVibration.playEffect("dual-rumble", {
@@ -919,37 +904,30 @@ export default class Player extends CharacterUnit {
       this.removeChild(this.explosion);
   }
 
-  addedToScene(gameObject, scene) {
-    // Reflect.get(
-    //     Object.getPrototypeOf(e.prototype),
-    //     "castAdded",
-    //     this
-    // ).call(this),
+  castAdded(gameObject) {
     super.castAdded();
-    scene.time.addEvent({
-      callback: () => {
-        gameObject.addChild(gameObject.barrier),
-          gameObject.addChild(gameObject.barrierEffect),
-          gameObject.addChild(gameObject.dragAreaRect),
-          gameObject.dragAreaRect.on(
-            "pointerdown",
-            gameObject.onScreenDragStart.bind(this)
-          ),
-          gameObject.dragAreaRect.on(
-            "pointerup",
-            gameObject.onScreenDragEnd.bind(this)
-          ),
-          gameObject.dragAreaRect.on(
-            "pointerupoutside",
-            gameObject.onScreenDragEnd.bind(this)
-          ),
-          gameObject.dragAreaRect.on(
-            "pointermove",
-            gameObject.onScreenDragMove.bind(this)
-          );
-      },
-    }),
-      (gameObject.keyDownListener = gameObject.onKeyDown.bind(this)),
+
+    gameObject.addChild(gameObject.barrier),
+      gameObject.addChild(gameObject.barrierEffect),
+      gameObject.addChild(gameObject.dragAreaRect),
+      gameObject.dragAreaRect.on(
+        "pointerdown",
+        gameObject.onScreenDragStart.bind(this)
+      ),
+      gameObject.dragAreaRect.on(
+        "pointerup",
+        gameObject.onScreenDragEnd.bind(this)
+      ),
+      gameObject.dragAreaRect.on(
+        "pointerupoutside",
+        gameObject.onScreenDragEnd.bind(this)
+      ),
+      gameObject.dragAreaRect.on(
+        "pointermove",
+        gameObject.onScreenDragMove.bind(this)
+      );
+
+    (gameObject.keyDownListener = gameObject.onKeyDown.bind(this)),
       (gameObject.keyUpListener = gameObject.onKeyUp.bind(this)),
       document.addEventListener("keydown", gameObject.keyDownListener),
       document.addEventListener("keyup", gameObject.keyUpListener),
@@ -1004,32 +982,32 @@ class Bullet extends CharacterUnit {
       ? ((this.unit.x += this.rotX * this.speed),
         (this.unit.y += this.rotY * this.speed))
       : "meka" == this.name
-      ? (this.cont++,
-        this.cont >= this.start &&
+        ? (this.cont++,
+          this.cont >= this.start &&
           (this.targetX || (this.targetX = this.player.x),
-          (this.unit.x += 0.009 * (this.targetX - this.unit.x)),
-          (this.unit.y += Math.cos(this.cont / 5) + 2.5 * this.speed)))
-      : (this.unit.y += this.speed);
+            (this.unit.x += 0.009 * (this.targetX - this.unit.x)),
+            (this.unit.y += Math.cos(this.cont / 5) + 2.5 * this.speed)))
+        : (this.unit.y += this.speed);
   }
 
   onDamage(t, e) {
     this.deadFlg ||
       ((this.hp -= t),
-      this.hp <= 0
-        ? (this.dead.bind(this)(e), (this.deadFlg = !0))
-        : (TweenMax.to(this.character, 0.1, {
+        this.hp <= 0
+          ? (this.dead.bind(this)(e), (this.deadFlg = !0))
+          : (TweenMax.to(this.character, 0.1, {
             tint: 16711680,
           }),
-          TweenMax.to(this.character, 0.1, {
-            delay: 0.1,
-            tint: 16777215,
-          }))),
+            TweenMax.to(this.character, 0.1, {
+              delay: 0.1,
+              tint: 16777215,
+            }))),
       "infinity" == e
         ? (AudioManager.stop("se_guard"), AudioManager.play("se_guard"))
         : this.name == Player.SHOOT_NAME_NORMAL ||
           this.name == Player.SHOOT_NAME_3WAY
-        ? (AudioManager.stop("se_damage"), AudioManager.play("se_damage"))
-        : this.name == Player.SHOOT_NAME_BIG &&
+          ? (AudioManager.stop("se_damage"), AudioManager.play("se_damage"))
+          : this.name == Player.SHOOT_NAME_BIG &&
           (AudioManager.stop("se_damage"), AudioManager.play("se_damage"));
   }
 
@@ -1039,10 +1017,10 @@ class Bullet extends CharacterUnit {
       this.unit.removeChild(this.shadow),
       this.removeChild(this.unit),
       void 0 !== this.explosion &&
-        (this.explosion.on(
-          "animationcomplete",
-          this.explosionComplete.bind(this)
-        ),
+      (this.explosion.on(
+        "animationcomplete",
+        this.explosionComplete.bind(this)
+      ),
         (this.explosion.x =
           this.unit.x +
           this.character.width / 2 -
@@ -1062,8 +1040,10 @@ class Bullet extends CharacterUnit {
       this.emit(CharacterUnit.CUSTOM_EVENT_DEAD_COMPLETE);
   }
 
+  // DRJ - NOT being called, castAdded is called by parent class CharacterUnit
   // DRJ - required for shadow
-  addedToScene(gameObject, scene) {
+  castAdded(gameObject, scene) {
+    console.log('[Bullet] addedToScene');
     super.castAdded(gameObject);
   }
 }
